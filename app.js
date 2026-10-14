@@ -1,4 +1,3 @@
-// Datos estructurados verificados para el simulador de rendimiento
 const brandsData = [
   {
     id: "deconkret",
