@@ -71,7 +71,7 @@ a:hover {
   right: -80px;
   width: 280px;
   height: 280px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -285,7 +285,7 @@ a:hover {
 
 .sim-controls {
   display: grid;
-  grid-template-columns: 1.2fr 1.1fr 1.1fr 0.9fr auto;
+  grid-template-columns: 1.15fr 1.15fr 1.15fr 0.9fr auto;
   gap: 14px;
   align-items: end;
   padding-bottom: 20px;
@@ -360,7 +360,7 @@ select {
 /* BARRAS ANIMADAS DE RENDIMIENTO */
 .yield-arena {
   display: grid;
-  grid-template-columns: 1.55fr 1fr;
+  grid-template-columns: 1.58fr 1fr;
   gap: 24px;
   align-items: stretch;
 }
@@ -372,11 +372,29 @@ select {
   padding: 18px 20px;
 }
 
-.yield-bars-title {
-  font-size: 0.94rem;
-  font-weight: 700;
+.yield-bars-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 4px;
+}
+
+.yield-bars-title {
+  font-size: 0.95rem;
+  font-weight: 700;
   color: #ffffff;
+}
+
+.equal-pct-pill {
+  background: rgba(16, 185, 129, 0.16);
+  color: var(--accent-emerald-light);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 9px;
+  border-radius: 999px;
 }
 
 .yield-bars-desc {
@@ -396,15 +414,38 @@ select {
 .yield-meta {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: 4px 10px;
-  font-size: 0.82rem;
+  font-size: 0.81rem;
   margin-bottom: 5px;
 }
 
 .yield-brand {
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ft-status-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.ft-ok {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.ft-under {
+  background: rgba(245, 158, 11, 0.16);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.38);
 }
 
 .yield-metrics {
@@ -506,7 +547,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-size: 0.82rem;
+  font-size: 0.81rem;
 }
 
 .savings-list li {
